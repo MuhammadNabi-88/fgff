@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">We Do</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="logo">
+            <img src="globe.png" alt="Globe Logo" class="rotating-logo">
+        </div>
+        <button class="lang-btn">🌍 Language</button>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="overlay"></div>
+        <div class="about-content">
+            <h2>About Our Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="videos.html" class="show-videos-btn">Show All Videos</a>
+        </div>
+    </section>
+
+    <!-- Video Grid -->
+    <section class="video-grid">
+        <div class="video-item"><video controls><source src="video1.mp4" type="video/mp4"></video></div>
+        <div class="video-item"><video controls><source src="video2.mp4" type="video/mp4"></video></div>
+        <div class="video-item"><video controls><source src="video3.mp4" type="video/mp4"></video></div>
+    </section>
+
+</body>
+</html>
