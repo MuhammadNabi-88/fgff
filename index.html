@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
+    <title>LED MTR</title>
     <link rel="stylesheet" href="styles.css">
     <!-- <script defer src="script.js"></script> -->
 
@@ -13,15 +13,17 @@
         <div  class="logo-container">
             <img width ="200" src="imagas/Logo.png" alt="Logo" class="globe-logo">
         </div>
-         <button class="menu-toggle">☰</button> 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#we-do">We Do</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#contact">Contact</a></li>
+         <!-- <button class="menu-toggle" id="menuToggle">☰</button>  -->
+         <button class="menu-toggle" id="menuToggle">&#9776;</button>
+         <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weDo.html">We Do</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="gallery.html">Gellery</a></li>
+                <li><a href="contact.html">Contact</a></li>
         </ul>
  
-        <button class="language-toggle">🌍EN/DE</button>
+        <!-- <button class="language-toggle lang-btn">🌍EN/DE</button> -->
     </nav>
     
     <section class="video-section">
@@ -30,127 +32,103 @@
             <!-- Your browser does not support the video tag. -->
         </video>
     </section>
-    
-    <section class="about-section">
-        <div class="about-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Discover our work and history through our engaging videos and articles.</p>
-        </div>
-    </section>
-    <!-- background pic -->
-    <div class="background-container">
-        <div class="overlay">
-          <!-- <h1>Welcome to the LED Experience</h1> -->
-          <!-- <p>Enjoy the vibrant blue LED background!</p> -->
-        </div>
+    <!-- About us section start -->
+    <!-- <header>
+      <h1>Über Uns</h1>
+  </header> -->
+  
+  <section class="about about-section">
+      <div class="container">
+          <div class="image">
+              <img src="imagas/aboutUs.png" alt="About Us">
+          </div>
+          <div class="content">
+              <h2>Über Uns</h2>
+              <p>LED-MTR: Ihr Experte für LED-Reparaturen in Baden-Württemberg
+                LED-MTR, unter dem Namen Hussain Alsaeed tätig, ist Ihr zuverlässiger Partner in Esslingen für die Reparatur von LED-Modulen und LED-Wänden.</p>
+              <p>Unsere Erfahrung - Ihr Vorteil
+                Dank unserer langjährigen Erfahrung in LED-Wände Reparaturen und -installationen arbeiten wir eng mit führenden LED-Wändeherstellern wie Infeled, Absen, DigiLED, Unilumin, Leyard usw.</p>
+              <button onclick="showMore()">Read More</button>
+              <p id="extraText" class="hidden">zusammen:
+                Dadurch können wir Reparaturdienste und technischen Support sowohl vor Ort als auch in unserem Servicecenter anbieten.
+                Schnelle und effiziente Reparaturen
+                Haben Sie genug von langen Wartezeiten auf Reparaturen durch den Hersteller? Wir bieten Ihnen einen schnellen, hochwertigen und lokalen Reparaturservice für LED-Module, der Ihre Erwartungen übertrifft.
+                Unser Leistungsspektrum:
+                Unser Reparaturdienst für LED-Module umfasst:
+                Austausch defekter Pixel
+                Reparatur und Austausch von IC-Chips
+                Fehlerbehebung vor Ort
+                und vieles mehr
+                Modulvielfalt:
+                Wir reparieren Module mit Pixelabständen von 0,6 m, 0,9 m, 1,2 mm, 1,5 mm, 
+                1,9 mm, 2,5 mm, 3,9 mm, 4,8 mm, 5 mm, 6 mm, 8 mm, 10 mm bis 16 mm..</p>
+          </div>
       </div>
+  </section>
+    <!-- About us section end -->
     <!-- ***** -->
-    <section id="all-videos" class="video-gallery">
-        <!-- <center><a style="padding-top: 60px;" href="#all-videos" class="btn">View All Videos</a></center> -->
-         <div class="linlAllVidoeButton">
-            <a style="padding-top: 60px;" href="#all-videos" class="btn">View All Videos</a>
-         </div>
-         <button onclick="myFunction()">Try it</button>
-        <!-- <a style="padding-top: 60px;" href="#all-videos" class="btn">View All Videos</a> -->
-        <div class="video-grid">
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-            <div class="video-item"><video controls><source src="imagas/video_A.mp4" type="video/mp4"></video></div>
-        </div>
-    </section>
-        <!-- Image Gallery -->
-        <section class="gallery">
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
-            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
-            <!-- <div class="image"><img src="image3.jpg" alt="Image 3"></div>
-            <div class="image"><img src="image4.jpg" alt="Image 4"></div>
-            <div class="image"><img src="image5.jpg" alt="Image 5"></div>
-            <div class="image"><img src="image6.jpg" alt="Image 6"></div>
-            <div class="image"><img src="image7.jpg" alt="Image 7"></div>
-            <div class="image"><img src="image8.jpg" alt="Image 8"></div> -->
-        </section>
 
-        <!--  -->
-          <!-- Brands Section -->
+    <!-- video same screen start -->
+    <header>
+      <div class="linlAllVidoeButton">
+        <a href="#all-videos" class="btn">View All Videos</a>
+     </div>
+      <!-- <h1>Our Video Gallery</h1> -->
+  </header>
+  
+  <section class="video-gallery" id="all-videos">
+    
+      <div class="video-container">
+          <iframe src="homevideo/homeA.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+          <iframe src="homevideo/homeB.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+          <iframe src="homevideo/homeC.mp4" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="homevideo/homeE.mp4" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="homevideo/homeF.mp4" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="homevideo/homeG.mp4" allowfullscreen></iframe>
+    </div> <div class="video-container">
+      <iframe src="homevideo/homeH.mp4" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+      <iframe src="homevideo/homeIJ.mp4" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+      <iframe src="homevideo/homeK.mp4" allowfullscreen></iframe>
+  </div> <div class="video-container">
+    <iframe src="homevideo/homeL.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe src="homevideo/homeM.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe src="homevideo/homeN.mp4" allowfullscreen></iframe>
+</div> <div class="video-container">
+  <iframe src="homevideo/homeOP.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+  <iframe src="homevideo/homeQ.mp4" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+  <iframe src="homevideo/homeC.mp4" allowfullscreen></iframe>
+</div>
+  </section>
+    <!-- video same screen end -->
+  
+
   <section class="brands">
     <h2>Our Partners</h2>
-    <div class="brand-container">
-      <div class="brand"><img src="imagas/branda.png" alt="Brand 1"></div>
-      <div class="brand"><img src="imagas/brandd.png" alt="Brand 2"></div>
-      <div class="brand"><img src="imagas/brandc.png" alt="Brand 3"></div>
-      <div class="brand"><img src="brand4.png" alt="Brand 4"></div>
-      <div class="brand"><img src="brand5.png" alt="Brand 5"></div>
-      <div class="brand"><img src="brand6.png" alt="Brand 6"></div>
-      <div class="brand"><img src="imagas/branda.png" alt="Brand 1"></div>
-      <div class="brand"><img src="imagas/brandd.png" alt="Brand 2"></div>
-      <div class="brand"><img src="imagas/brandc.png" alt="Brand 3"></div>
-      <div class="brand"><img src="brand4.png" alt="Brand 4"></div>
-      <div class="brand"><img src="brand5.png" alt="Brand 5"></div>
-      <div class="brand"><img src="brand6.png" alt="Brand 6"></div>
-    </div>
   </section>
-  <!-- testimonial -->
-     <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-container">
-      <!-- Testimonial 1 -->
-      <div class="testimonial">
-        <p class="feedback">"Great service and amazing work quality. I highly recommend them!"</p>
-        <div class="rating">
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-        </div>
-        <p class="customer-name">- John Doe</p>
-      </div>
-      <!-- Testimonial 2 -->
-      <div class="testimonial">
-        <p class="feedback">"They exceeded my expectations. Very professional and timely."</p>
-        <div class="rating">
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9734;</span>
-        </div>
-        <p class="customer-name">- Jane Smith</p>
-      </div>
-      <!-- Testimonial 3 -->
-      <div class="testimonial">
-        <p class="feedback">"Excellent support and outstanding quality. A pleasure to work with!"</p>
-        <div class="rating">
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9733;</span>
-          <span>&#9734;</span>
-          <span>&#9734;</span>
-        </div>
-        <p class="customer-name">- Mark Wilson</p>
-      </div>
-    </div>
-  </section>
+
+      
   <!-- FAQ -->
   <section class="faq-section">
     <h2>Frequently Asked Questions</h2>
@@ -234,11 +212,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 SoftOutlet Metzingen. All rights reserved.</p>
+      <p>&copy; 2025 designed & developed by M.Nabi SoftOutlet Metzingen. All rights reserved.</p>
     </div>
   </footer>
   
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>

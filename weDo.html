@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED MTR</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script defer src="script.js"></script> -->
+
+</head>
+<body>
+    <nav class="navbar">
+        <div  class="logo-container">
+            <img width ="200" src="imagas/Logo.png" alt="Logo" class="globe-logo">
+        </div>
+         <!-- <button class="menu-toggle" id="menuToggle">☰</button>  -->
+         <button class="menu-toggle" id="menuToggle">&#9776;</button>
+         <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weDo.html">We Do</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="gallery.html">Gellery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+ 
+        <!-- <button class="language-toggle lang-btn">🌍EN/DE</button> -->
+    </nav>
+    
+    <!-- <section class="topimages">
+        <div class="imageHero"><img src="imagas/ledB.png" alt="Image 2"></div>
+    </section> -->
+
+    <div class="hero">
+      <img src="imagas/ledB.png" alt="Hero Background">
+      <div class="hero-content">
+          <h1>Umfassende Reparaturdienstleistungen für LED-Anzeigemodule</h1>
+          <h2>Kontaktieren Sie uns für Lösungen zu Preisen, Reparaturen, Lieferung und mehr.</h2>
+          <button onclick="scrollToContent()">Was we tune</button>
+      </div>
+  </div>
+
+  <script>
+      function scrollToContent() {
+          window.scrollTo({
+              top: window.innerHeight,
+              behavior: 'smooth'
+          });
+      }
+      function openModal(imgElement, details) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const imageDetails = document.getElementById('imageDetails');
+
+            modalImg.src = imgElement.src;
+            imageDetails.textContent = details;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+  </script>
+
+    <!-- About us section start -->
+    <!-- <header>
+      <h1>Über Uns</h1>
+  </header> -->
+  
+  <section class="about about-section">
+      <div class="containerWhatWeDo">
+          <div class="image">
+              <img src="imagas/aboutUs.png" alt="About Us">
+          </div>
+          <div class="content">
+              <h2>IC-Chip-Reparatur</h2>
+              <h2>Integrierte Schaltkreise (ICs) in LED-Modulen</h2>
+              <p>Für den freien Betrieb von LED-Modulen sind mehrere Schaltkreise (ICs) als Bauteile integriert, 
+                welche nicht ohne weiteres entfernbar sind. Diese bilden sich in verschiedenen Wohneinheiten,
+                 wie zum Beispiel: QFN, TSOP, SOP usw..</p>
+                 <h2>Unsere Erfahrung - Ihr Vorteil</h2>
+              <p>Dank unserer langjährigen Erfahrung in LED-Wände Reparaturen und -installationen arbeiten wir eng 
+                mit führenden LED-Wändeherstellern wie Infeled, Absen, DigiLED, Unilumin, Leyard usw.</p>
+                <h2>Unsere Expertise</h2>
+              <p>Dank unserer umfassenden Kenntnisse der Leiterplatten von LED-Modulen können wir schnell feststellen, 
+                welcher IC-Chip die meisten Probleme aufweist, und ihn ersetzen..</p>
+              <button onclick="showMore()">Read More</button>
+              <p id="extraText" class="hidden">Erinnerung:
+                Das Ersetzen von IC-Chips durch Laien kann neue Probleme verursachen oder zu irreparablen Schäden an 
+                Schaltkreisen oder Pins führen.
+                <br>
+                Benötigen Sie Hilfe bei der Einrichtung eines LED-Bildschirms für den Innen- oder Außenbereich? 
+                Haben Sie Schwierigkeiten, das Problem Ihres LED-Bildschirms zu diagnostizieren?
+                <br><br>
+                  Wir bieten umfassende Außendienste, die von Einrichtung und Konfiguration über Fehlerbehebung bis 
+                  hin zur Wartung reichen. Wir sind gut ausgebildet und erfahren in der Bereitstellung hochwertiger 
+                  Vor-Ort-Dienstleistungen für Ihre LED-Bildschirme.
+                  Unsere Erfahrung
+                  <br><br>
+                  Wir sind vertraut mit der Konfiguration gängiger LED-Controller wie Linsn, Novastar, Colorlight und DBStar.
+                  Unser Vor-Ort-Service umfasst unter anderem die LED-Bildschirmkonfiguration, das Erstellen einer RCFGX-Datei,</p>
+                
+          </div>
+      </div>
+  </section>
+    <!-- About us section end -->
+    <!-- ***** -->
+
+    <!-- gellery and detail about images start -->
+    <div class="gallery">
+      <!-- 9 Images for 3 Rows -->
+      <img src="imagas/bilder/weDo_A.jpg" alt="Image 1" onclick="openModal(this, 'Beautiful Waterfallthalsjfklsafj fgdfgfd dfgdfgfdgfdgfdfd'
+   
+
+      )">
+      <img src="imagas/bilder/weDo_B.jpg" alt="Image 2" onclick="openModal(this, 'Peaceful Forest')">
+      <img src="imagas/bilder/weDo_C.jpg" alt="Image 3" onclick="openModal(this, 'Majestic Mountains')">
+      <img src="imagas/bilder/weDo_D.jpg" alt="Image 4" onclick="openModal(this, 'Serene Beach')">
+      <img src="imagas/bilder/weDo_E.jpg" alt="Image 5" onclick="openModal(this, 'City Lights')">
+      <img src="imagas/bilder/weDo_F.jpg" alt="Image 6" onclick="openModal(this, 'Vast Desert')">
+      <img src="imagas/bilder/weDo_G.jpg" alt="Image 7" onclick="openModal(this, 'Mirror Lake')">
+      <img src="imagas/bilder/weDo_ij.jpg" alt="Image 8" onclick="openModal(this, 'Colorful Garden')">
+      <img src="imagas/bilder/weDo_K.jpg" alt="Image 9" onclick="openModal(this, 'Starlit Sky')">
+      <img src="imagas/bilder/weDo_L.jpg" alt="Image 2" onclick="openModal(this, 'Peaceful Forest')">
+      <img src="imagas/bilder/weDo_O.jpg" alt="Image 3" onclick="openModal(this, 'Majestic Mountains')">
+      <img src="imagas/bilder/weDo_P.jpg" alt="Image 4" onclick="openModal(this, 'Serene Beach')">
+      <img src="imagas/bilder/weDo_Q.jpg" alt="Image 5" onclick="openModal(this, 'City Lights')">
+      <img src="imagas/bilder/weDoM.png" alt="Image 6" onclick="openModal(this, 'Vast Desert')">
+      <img src="imagas/bilder/weDoN.png" alt="Image 7" onclick="openModal(this, 'Mirror Lake')">
+      <img src="imagas/bilder/weDo_Q.jpg" alt="Image 8" onclick="openModal(this, 'Colorful Garden')">
+      <!-- <img src="imagas/bilder/weDo_K.jpg" alt="Image 9" onclick="openModal(this, 'Starlit Sky')"> -->
+  </div>
+
+  <!-- Modal for Image Preview -->
+  <div class="modal" id="imageModal">
+      <div class="modal-content">
+          <img id="modalImage" src="" alt="Large View">
+          <p id="imageDetails"></p>
+          <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
+  </div>
+    <!-- gellery and image details end -->
+    
+    <!-- </section> -->
+        <!-- Image Gallery -->
+        <!-- <section class="gallery">
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div>
+            <div class="image"><img src="imagas/background_A.png" alt="Image 1"></div>
+            <div class="image"><img src="imagas/ledB.png" alt="Image 2"></div> -->
+            <!-- <div class="image"><img src="image3.jpg" alt="Image 3"></div>
+            <div class="image"><img src="image4.jpg" alt="Image 4"></div>
+            <div class="image"><img src="image5.jpg" alt="Image 5"></div>
+            <div class="image"><img src="image6.jpg" alt="Image 6"></div>
+            <div class="image"><img src="image7.jpg" alt="Image 7"></div>
+            <div class="image"><img src="image8.jpg" alt="Image 8"></div> -->
+        <!-- </section> -->
+        <section class="about about-section">
+          <div class="containerWhatWeDo">
+              <div class="image">
+                  <img src="imagas/bilder/weDoM.png" alt="About Us">
+              </div>
+              <div class="content">
+                  <h2>IC-Chip-Reparatur</h2>
+                  <h2>Integrierte Schaltkreise (ICs) in LED-Modulen</h2>
+                  <p>Für den freien Betrieb von LED-Modulen sind mehrere Schaltkreise (ICs) als Bauteile integriert, 
+                    welche nicht ohne weiteres entfernbar sind. Diese bilden sich in verschiedenen Wohneinheiten,
+                     wie zum Beispiel: QFN, TSOP, SOP usw..</p>
+                     <h2>Unsere Erfahrung - Ihr Vorteil</h2>
+                  <p>Dank unserer langjährigen Erfahrung in LED-Wände Reparaturen und -installationen arbeiten wir eng 
+                    mit führenden LED-Wändeherstellern wie Infeled, Absen, DigiLED, Unilumin, Leyard usw.</p>
+                    <h2>Unsere Expertise</h2>
+                  <p>Dank unserer umfassenden Kenntnisse der Leiterplatten von LED-Modulen können wir schnell feststellen, 
+                    welcher IC-Chip die meisten Probleme aufweist, und ihn ersetzen..</p>
+                  <button onclick="showMore_B()">Read More</button>
+                  <p id="extraText_B" class="hidden">Erinnerung:
+                    Das Ersetzen von IC-Chips durch Laien kann neue Probleme verursachen oder zu irreparablen Schäden an 
+                    Schaltkreisen oder Pins führen.
+                    <br>
+                    Benötigen Sie Hilfe bei der Einrichtung eines LED-Bildschirms für den Innen- oder Außenbereich? 
+                    Haben Sie Schwierigkeiten, das Problem Ihres LED-Bildschirms zu diagnostizieren?
+                    <br><br>
+                      Wir bieten umfassende Außendienste, die von Einrichtung und Konfiguration über Fehlerbehebung bis 
+                      hin zur Wartung reichen. Wir sind gut ausgebildet und erfahren in der Bereitstellung hochwertiger 
+                      Vor-Ort-Dienstleistungen für Ihre LED-Bildschirme.
+                      Unsere Erfahrung
+                      <br><br>
+                      Wir sind vertraut mit der Konfiguration gängiger LED-Controller wie Linsn, Novastar, Colorlight und DBStar.
+                      Unser Vor-Ort-Service umfasst unter anderem die LED-Bildschirmkonfiguration, das Erstellen einer RCFGX-Datei,</p>
+                    
+              </div>
+          </div>
+      </section>
+        <!--  -->
+          <!-- Brands Section -->
+  <section class="brands">
+    <h2>Our Partners</h2>
+    <div class="brand-container">
+      <div class="brand"><img src="imagas/branda.png" alt="Brand 1"></div>
+      <div class="brand"><img src="imagas/brandd.png" alt="Brand 2"></div>
+      <div class="brand"><img src="imagas/brandc.png" alt="Brand 3"></div>
+      <div class="brand"><img src="brand4.png" alt="Brand 4"></div>
+      <div class="brand"><img src="brand5.png" alt="Brand 5"></div>
+      <div class="brand"><img src="brand6.png" alt="Brand 6"></div>
+      <div class="brand"><img src="imagas/branda.png" alt="Brand 1"></div>
+      <div class="brand"><img src="imagas/brandd.png" alt="Brand 2"></div>
+      <div class="brand"><img src="imagas/brandc.png" alt="Brand 3"></div>
+      <div class="brand"><img src="brand4.png" alt="Brand 4"></div>
+      <div class="brand"><img src="brand5.png" alt="Brand 5"></div>
+      <div class="brand"><img src="brand6.png" alt="Brand 6"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <!-- Sample FAQ Items (duplicate as needed for 25+ items) -->
+      <div class="faq-item" data-question="What is your return policy?" data-answer="Our return policy lasts 30 days from the date of purchase. Items must be in original condition.">
+        <h3 class="faq-question">Q1: What is your return policy?</h3>
+      </div>
+      <div class="faq-item" data-question="How long does shipping take?" data-answer="Shipping typically takes 5-7 business days depending on your location.">
+        <h3 class="faq-question">Q2: How long does shipping take?</h3>
+      </div>
+      <div class="faq-item" data-question="Do you ship internationally?" data-answer="Yes, we ship to most countries worldwide. Shipping charges and times may vary.">
+        <h3 class="faq-question">Q3: Do you ship internationally?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I track my order?" data-answer="Once your order ships, you will receive an email with a tracking number.">
+        <h3 class="faq-question">Q4: How can I track my order?</h3>
+      </div>
+      <div class="faq-item" data-question="What payment methods do you accept?" data-answer="We accept all major credit cards, PayPal, and Apple Pay.">
+        <h3 class="faq-question">Q5: What payment methods do you accept?</h3>
+      </div>
+      <div class="faq-item" data-question="Can I cancel my order?" data-answer="Orders can be canceled within 2 hours of placement. After that, we cannot guarantee cancellation.">
+        <h3 class="faq-question">Q6: Can I cancel my order?</h3>
+      </div>
+      <div class="faq-item" data-question="How do I contact customer support?" data-answer="You can contact us via our Contact page or call our support hotline at 123-456-7890.">
+        <h3 class="faq-question">Q7: How do I contact customer support?</h3>
+      </div>
+      <div class="faq-item" data-question="What is your privacy policy?" data-answer="Our privacy policy is available on our website. We take your privacy seriously.">
+        <h3 class="faq-question">Q8: What is your privacy policy?</h3>
+      </div>
+      <div class="faq-item" data-question="Do you offer discounts for bulk orders?" data-answer="Yes, please contact our sales team for bulk order discounts and custom pricing.">
+        <h3 class="faq-question">Q9: Do you offer discounts for bulk orders?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I update my order details?" data-answer="To update your order details, please log in to your account and visit the 'My Orders' section.">
+        <h3 class="faq-question">Q10: How can I update my order details?</h3>
+      </div>
+      <!-- Add additional FAQ items here -->
+      <div class="faq-item" data-question="Do you offer discounts for bulk orders?" data-answer="Yes, please contact our sales team for bulk order discounts and custom pricing.">
+        <h3 class="faq-question">Q9: Do you offer discounts for bulk orders?</h3>
+      </div>
+      <div class="faq-item" data-question="How can I update my order details?" data-answer="To update your order details, please log in to your account and visit the 'My Orders' section.">
+        <h3 class="faq-question">Q10: How can I update my order details?</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for FAQ Details -->
+  <div id="faqModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalQuestion"></h3>
+      <p id="modalAnswer"></p>
+    </div>
+  </div>
+
+  <!-- testimonial -->
+
+    <!-- testimonial -->
+     <!-- Testimonials Section -->
+     <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <p class="feedback">"Great service and amazing work quality. I highly recommend them!"</p>
+          <div class="rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+          <p class="customer-name">- John Doe</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <p class="feedback">"They exceeded my expectations. Very professional and timely."</p>
+          <div class="rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+          </div>
+          <p class="customer-name">- Jane Smith</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <p class="feedback">"Excellent support and outstanding quality. A pleasure to work with!"</p>
+          <div class="rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+            <span>&#9734;</span>
+          </div>
+          <p class="customer-name">- Mark Wilson</p>
+        </div>
+      </div>
+    </section>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Home</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>History</h4>
+        <ul>
+          <li><a href="history.html">Our History</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 designed & developed by M.Nabi SoftOutlet Metzingen. All rights reserved.</p>
+    </div>
+  </footer>
+  
+    <!-- <script defer src="script.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

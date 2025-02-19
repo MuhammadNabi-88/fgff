@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galleryStyles.css">
+
+    <!-- <script defer src="script.js"></script> -->
+
+</head>
+<body>
+    <nav class="navbar">
+        <div  class="logo-container">
+            <img width ="200" src="imagas/Logo.png" alt="Logo" class="globe-logo">
+        </div>
+         <!-- <button class="menu-toggle" id="menuToggle">☰</button>  -->
+         <button class="menu-toggle" id="menuToggle">&#9776;</button>
+         <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#we-do">We Do</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="gallery.html">Geallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+ 
+        <!-- <button class="language-toggle lang-btn">🌍EN/DE</button> -->
+    </nav>
+
+<header>
+    <h1>Gallery</h1>
+  </header>
+  <main>
+    <section class="gallery">
+      <!-- Each image is wrapped in a link that opens the details page in a new window -->
+      <a href="details.html?image=1" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 1" />
+      </a>
+      <a href="details.html?image=2" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 2" />
+      </a>
+      <a href="details.html?image=3" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 3" />
+      </a>
+      <a href="details.html?image=4" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 4" />
+      </a>
+      <a href="details.html?image=1" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 1" />
+      </a>
+      <a href="details.html?image=2" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 2" />
+      </a>
+      <a href="details.html?image=3" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 3" />
+      </a>
+      <a href="details.html?image=4" class="gallery-item" target="_blank">
+        <img src="imagas/ledB.png" alt="Image 4" />
+      </a>
+    </section>
+  </main>
+  <!-- (Optional) You can include a separate JavaScript file if additional interactivity is needed -->
+  <script src="gallery.js"></script>

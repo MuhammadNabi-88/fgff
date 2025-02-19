@@ -7,17 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const langBtn = document.querySelector(".lang-btn");
     langBtn.addEventListener("click", () => {
         alert("Language changed!");
+      });
     });
 
-    // Mobile Menu Toggle
-    const menuToggle = document.querySelector(".menu-toggle");
-    // const navLinks = document.querySelector(".nav-links");
-    const navLinksA = document.getElementsByClassName(".nav-links");
-    menuToggle.addEventListener("click", () => {
-        navLinksA.classList.toggle("show");
-    });
-});
 
+// **************************
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+  
+    menuToggle.addEventListener("click", function() {
+      navLinks.classList.toggle("show");
+    });
+  });
 // **************************
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -54,3 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  // About us to click more textAlign: 
+  
+  function showMore() {
+    var extraText = document.getElementById("extraText");
+    if (extraText.classList.contains("hidden")) {
+        extraText.classList.remove("hidden");
+    } else {
+        extraText.classList.add("hidden");
+    }
+  }
+    function showMore_B() {
+      var extraText = document.getElementById("extraText_B");
+      if (extraText.classList.contains("hidden")) {
+          extraText.classList.remove("hidden");
+      } else {
+          extraText.classList.add("hidden");
+      }
+}
